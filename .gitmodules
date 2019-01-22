@@ -1,3 +1,6 @@
 [submodule "responsive-design"]
 	path = responsive-design
 	url = https://github.com/btuerker/responsive-design
+[submodule "building-with-backgrounds-and-gradients"]
+	path = building-with-backgrounds-and-gradients
+	url = https://github.com/andreimorosan29/building-with-backgrounds-and-gradients
