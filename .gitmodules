@@ -7,3 +7,6 @@
 [submodule "css-frameworks-bootstrap"]
 	path = css-frameworks-bootstrap
 	url = https://github.com/andreimorosan29/css-frameworks-bootstrap
+[submodule "css-preprocessors"]
+	path = css-preprocessors
+	url = https://github.com/btuerker/css-preprocessors.git
