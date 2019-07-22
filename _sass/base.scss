@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body {
+  background-color: rgb(30, 30, 30);
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.introduce-yourself {
+  width: 100%;
+  color: white;
+  margin-top: 80px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 200px;
+      border-radius: 100%;
+      background-color: rgb(30, 30, 30);
+      padding: 5px 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: lighter;
+      margin-bottom: 10px;
+      background-color: rgb(30, 30, 30);
+      padding: 5px 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .links {
+      margin-top: 10px;
+      background-color: rgb(30, 30, 30);
+      padding: 5px 0;
+
+      .site-links, .social-links {
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            -webkit-transition: background-color 200ms linear;
+            -ms-transition: background-color 200ms linear;
+            transition: background-color 200ms linear;
+          }
+        }
+      }
+
+      .site-links {
+        a {
+          padding: 5px 10px;
+          margin: 5px;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+      .social-links {
+        font-size: 40px;
+        a {
+          border-radius: 100%;
+          outline: none;
+          &:hover {
+            -webkit-transition: background-color 200ms linear;
+            -ms-transition: background-color 200ms linear;
+            transition: background-color 200ms linear;
+          }
+          i {
+            padding: 10px 13px;
+            border-radius: 100%;
+          }
+        }
+        .twitter:hover {
+          // background-color: #4B9EF2;
+          background-color: #46AAED;
+        }
+
+        .github:hover {
+          background-color: #6F42C1;
+        }
+
+        .linkedin:hover {
+          // background-color: #4875B4;
+          background-color: #337ab8;
+        }
+      }
+    }
+  }
+}
