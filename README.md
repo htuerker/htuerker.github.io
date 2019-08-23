@@ -2,7 +2,7 @@
 
 <details>
   <summary><b>Hint: First hint!</b></summary>
-  :) :) :)
+  
   ```ruby
     puts "Hello, World!"
   ```
@@ -11,7 +11,7 @@
 
 <details>
   <summary><b>Hello Emily :)</b></summary>
-  :) :) :)
+  
   ```ruby
     puts "Hello, World!"
   ```
