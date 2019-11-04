@@ -1,0 +1,12 @@
+<div class="slider-item">
+  <h5 class="text-white mb-0">{{ include.object.title }}</h5>
+  <img class="mb-2 mt-4" src="{{ include.object.image }}" alt="{{ include.object.name }}">
+  <div class="row d-flex justify-content-center mb-2">  
+      <a class="mx-2" target="_blank" href="{{include.object.github_link}}">Github Repo</a>|
+      <a class="mx-2" target="_blank" href="{{include.object.live_link}}">Live Preview</a>
+    </div>
+  {% assign items = include.object.tech_stack | split: ", " %}
+  {% for item in items %}
+  <button class="btn btn-outline-danger p-1 }}" disabled>{{ item }}</button>
+  {% endfor %}
+</div>

@@ -1,0 +1,69 @@
+<div class="home-page row d-flex flex-column align-items-center text-center">
+  <div class="col-md-5 col-sm-12 mt-3">
+    <img class="rounded-circle" src="../assets/images/profile_photo.jpg" width="200" height="200"/>
+    <h1>Burhan Tuerker</h1>
+  </div>
+  <div class="typewriter row d-inline-flex justify-content-center">
+    <h3>Software Engineer</h3>
+  </div>
+
+  <div class="social-links col-md-5 col-sm-12 my-1">
+      <a class="twitter" target="_blank" href="https://github.com/btuerker"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="github" target="_blank" href="https://twitter.com/burhantuerker"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/burhantuerker/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+
+  <ul class="nav nav-tabs col-md-5 col-sm-12 d-flex justify-content-between my-1" id="myTab" role="tablist">
+    <li class="nav-item flex-fill">
+      <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">ABOUT</a>
+    </li>
+    <li class="nav-item flex-fill">
+      <a class="nav-link " id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">PORTFOLIO</a>
+    </li>
+    <li class="nav-item flex-fill">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">CONTACT</a>
+    </li>
+    <li class="nav-item flex-fill">
+      <a class="nav-link" target="_blank" href="/assets/burhan_tuerker_resume.pdf">CV</a>
+    </li>
+  </ul>
+  <div class="tab-content rounded py-3 px-4 col-lg-5 col-md-7 col-sm-12 text-secondary" id="myTabContent">
+    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <h5 class="text-white">Hey there!</h5>
+        <p>I'm Burhan from Turkey.
+          <br>I've been interested in software engineering over 6 years.
+          <br>I primarly focus on full stack web application development and everything in its orbit.
+        </p>
+        <br>
+        <p>business inquiries: <a>burhan.tuerker@gmail.com</a></p>
+    </div>
+
+    <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="profile-tab">
+      <div id="portfolio" class="row">
+        <div id="slider">
+          <button id="prev-button"><i class="fa fa-chevron-left"></i></button>
+          <div id="slider-wrapper">
+            {% for project in site.projects %}
+              {% include project.html object=project %}
+            {% endfor %}
+          </div>
+          <button id="next-button"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <form class="contact-form" action="https://formspree.io/xrgzwqle" method="POST">
+        <div class="form-row my-2">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-row my-2">
+          <textarea class="form-control" name="message" placeholder="Message" rows="4"></textarea>
+        </div>
+        <div class="form-row">
+          <button class="col btn btn-outline-danger" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
