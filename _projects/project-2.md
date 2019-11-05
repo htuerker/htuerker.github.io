@@ -1,6 +1,6 @@
 ---
 layout: project
-title: React/Redux - Bookstore CMS
+title: Bookstore CMS
 tech_stack: React, Redux, Heroku
 image: /assets/images/portfolio/bookstore.png
 github_link: https://github.com/btuerker/react-bookstore

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Rails - Social Network
+title: Social Network
 tech_stack: Ruby, Ruby on Rails, PostgreSQL, Heroku, AWS S3, Docker
 image: /assets/images/portfolio/social-network.png
 github_link: https://github.com/btuerker/odin-facebook

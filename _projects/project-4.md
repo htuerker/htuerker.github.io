@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Javascript - Battleship
+title: Battleship
 tech_stack: ES6, Webpack, draggable.js
 image: /assets/images/portfolio/battleship.png
 github_link: https://github.com/btuerker/js-battleship
